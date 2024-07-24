@@ -16,6 +16,9 @@ export class MainPageComponent  {
   },{
     name: 'Vegeta',
     power: 7500
+  },{
+    name: 'Yamcha',
+    power: 500
   }];
 
 }
