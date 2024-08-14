@@ -7,7 +7,7 @@ import { Character } from '../interfaces/character.interface';
 })
 
 export class MainPageComponent  {
-  public character: Character[] = [{
+  public characters: Character[] = [{
     name: 'Krilin',
     power: 1000
   },{
@@ -22,8 +22,11 @@ export class MainPageComponent  {
   }];
 
   onNewCharacter(character: Character):void {
-    console.log('MainPage');
-    console.log(character);
+    this.characters.push(character);
+  }
+
+  onDeleteCharacter(index: number):void{
+    this.characters.splice(index, 1);
   }
 
 }
